@@ -55,6 +55,24 @@ python -m uvicorn app.main:app --reload
 # Make sure Postgres is running:
 docker compose ps
 
+
+
+
 #Restart if needed:
 docker compose down
 docker compose up -d
+
+
+## Performance Benchmark 
+
+##This project includes a small benchmark script to measure the response time of the monthly summary endpoint.
+
+### 1) Start the API
+```bash
+python -m uvicorn app.main:app --reload
+
+# in a new terminal, Run the benchmark
+python scripts/benchmark_summary.py
+
+# The script measures GET /summary?month=2026-01 for 30 runs and prints p50/p95 latency.
+
