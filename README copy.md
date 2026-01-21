@@ -31,7 +31,7 @@ This project was built to demonstrate practical backend engineering skills: API 
 
 ## Dashboard Preview
 
-![FinTrack Dashboard](images/Dashboard.png)
+![FinTrack Dashboard](images/dashboard.png)
 
 ---
 
